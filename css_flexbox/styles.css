@@ -1,0 +1,39 @@
+
+.container{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    height: 1000px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.blogpost { 
+    width: 100px;
+    min-width: 300px;
+    border: 1px solid black;
+    flex: 1;
+    text-align: center;
+}
+
+.blogpost_special_1 {
+    width: 300px;
+    border: 1px solid red;
+    flex: 2;
+    text-align: center;
+    align-self: center;
+}
+
+.blogpost_special_2 {
+    width: 300px;
+    border: 1px solid red;
+    flex: 0;
+    text-align: center;
+    align-self: flex-end;
+}
+
+@media (min-width: 1800px) {
+    .container {
+        flex-direction: row-reverse;
+    }
+}
